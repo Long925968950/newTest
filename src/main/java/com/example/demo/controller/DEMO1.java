@@ -1,18 +1,15 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.*;
+import java.util.AbstractMap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 @RestController
 public class DEMO1 {
-
-    @GetMapping("Hello")
-    public String hello() {
-        return "Hello World";
-    }
 
 
     public static void main(String[] args) {

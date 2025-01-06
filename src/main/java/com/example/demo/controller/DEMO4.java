@@ -4,7 +4,7 @@ import com.example.demo.dto.SingletonStudent;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DEMO3 {
+public class DEMO4 {
 
 
     public static void main(String[] args) {

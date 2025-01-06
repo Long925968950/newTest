@@ -12,11 +12,6 @@ import java.util.stream.Collectors;
 @RestController
 public class DEMO2 {
 
-    @GetMapping("Hello")
-    public String hello() {
-        return "Hello World";
-    }
-
 
     public static void main(String[] args) {
 
