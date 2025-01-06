@@ -3,12 +3,14 @@ package com.example.demo.controller;
 import com.example.demo.dto.Student;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 @RestController
-public class HelloWord {
+public class DEMO2 {
 
     @GetMapping("Hello")
     public String hello() {
@@ -17,27 +19,8 @@ public class HelloWord {
 
 
     public static void main(String[] args) {
-//        // 示例数据，其中有些时间点的数据缺失
-//        List<Map.Entry<Integer, Integer>> data = Arrays.asList(
-//                new AbstractMap.SimpleEntry<>(0, 99),
-//                new AbstractMap.SimpleEntry<>(1, 99),
-//                new AbstractMap.SimpleEntry<>(3, 99),
-//                new AbstractMap.SimpleEntry<>(4, 99)
-//        );
-//
-//        // 填充缺失数据并打印结果
-//        IntStream.range(0, 30)
-//                .mapToObj(minute -> new AbstractMap.SimpleEntry<>(
-//                        minute,
-//                        data.stream()
-//                                .filter(entry -> entry.getKey() == minute)
-//                                .findFirst()
-//                                .map(Map.Entry::getValue)
-//                                .orElse(1)
-//                ))
-//                .forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
 
-
+        //统计数据，有某学生成绩的数据结构，如何获得满足语数外三科都大于60的平均分、最高分和最低分数据
         List<Student> students = new ArrayList<>(); //获取学生列表
         Random random = new Random();
         String[] names = {"Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Heidi", "Ivan", "Judy",
